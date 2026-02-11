@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D&Y IMMO</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar glass-card">
+        <div>
+          <h1>D&Y IMMO</h1>
+          <p>Yichtadlout, notre devise</p>
+        </div>
+      </header>
+
+      <main id="pages">
+        <section id="home-page" class="page active"></section>
+        <section id="history-page" class="page"></section>
+        <section id="detail-page" class="page"></section>
+        <section id="settings-page" class="page"></section>
+      </main>
+
+      <nav class="bottom-nav glass-card">
+        <button class="nav-btn active" data-page="home">Home</button>
+        <button class="nav-btn" data-page="history">Historique</button>
+        <button class="nav-btn" data-page="settings">Settings</button>
+      </nav>
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <div id="loader-modal" class="modal hidden">
+      <div class="modal-card glass-card">
+        <h3>Extraction en cours…</h3>
+        <p id="progress-step">Lecture des metadata…</p>
+        <div class="skeleton-grid">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+
+    <div id="manual-modal" class="modal hidden">
+      <div class="modal-card glass-card bottom-sheet">
+        <h3>Compléter l'annonce</h3>
+        <p>On a trouvé des infos partielles. Vérifie et complète.</p>
+        <form id="manual-form"></form>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
