@@ -1,0 +1,10 @@
+{
+  "name": "dy-immo",
+  "version": "1.0.0",
+  "description": "D&Y IMMO extraction webapp",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  }
+}
